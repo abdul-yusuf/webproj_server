@@ -26,7 +26,7 @@
     
         <!-- Favicons -->
         <!-- <link href="assets/img/favicon.png" rel="icon">
-        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+        <link href="assets//apple-touch-icon.png" rel="apple-touch-icon"> -->
     
         <!-- Google Fonts -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
@@ -63,6 +63,27 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
+
+        <!-- ======= Mobile nav toggle button ======= -->
+        <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+        <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+        <!-- ======= Header ======= -->
+        <header id="header" class="d-flex flex-column justify-content-center">
+
+            <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li><a href="{% url 'core:home-view' %}#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                <li><a href="{% url 'core:home-view' %}#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                <li><a href="{% url 'core:home-view' %}#interest" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Interest</span></a></li>
+                <li><a href="{% url 'core:home-view' %}#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                <li><a href="{% url 'core:home-view' %}#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Blog</span></a></li>
+                <li><a href="{% url 'core:carear-view' %}" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Careeer & Employment</span></a></li>
+                <li><a href="{% url 'core:gallary-view' %}" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Gallary</span></a></li>
+                <li><a href="{% url 'core:portfolio-view' %}" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Portfolio</span></a></li>
+            </ul>
+            </nav><!-- .nav-menu -->
+
+        </header><!-- End Header -->
 
         {% comment %} <script src="" async defer></script> {% endcomment %}
         {% block main %}{% endblock main %}

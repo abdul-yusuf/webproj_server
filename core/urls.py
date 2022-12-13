@@ -6,5 +6,6 @@ app_name = 'core'
 urlpatterns = [
     path('', HomeView, name='home-view'),
     path('carear', CarearView, name='carear-view'),
-    path('gallary', GallaryView, name='gallary-view')
+    path('gallary', GallaryView, name='gallary-view'),
+    path('portfolio', GallaryView, name='portfolio-view')
 ]
